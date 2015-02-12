@@ -7977,7 +7977,7 @@ class plgAuthenticationNetsuiteAuth extends JPlugin
 
     
     //this is for the joomla plugin, since it executes after the NS plugin
-    function onUserLoginFailure( &$response )
+    function onLoginFailure( &$response )
     {
      
        switch ($response["error_message"]) 
