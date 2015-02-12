@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="authentication">
+    <name>Authentication - Netsuite</name>
+    <author>Viren Kumar</author>
+    <creationDate>Nov 13, 2010</creationDate>
+    <copyright>(C) 2005 - 2007 Open Source Matters. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>virensk@gmail.com</authorEmail>
+    <authorUrl>www.viren.ca</authorUrl>
+    <version>1.5</version>
+    <description>An authentication plugin against Netsuite 2.5.0 and higher for Joomla 1.5</description>
+    <files>
+        <filename plugin="NetsuiteAuth">NetsuiteAuth.php</filename>
+    </files>
+    <config>
+        <fields name="params">
+        <fieldset name="basic" label="basic">
+	<field name="NETSUITE_SYSTEM_LOGIN" type="text" default="admin@netsuite.com" label="Netsuite System Account Login" description="Netsuite System Account Login"></field>
+	<field name="NETSUITE_SYSTEM_PASSWORD" type="text" default="123456abc" label="Netsuite System Account Password" description="Netsuite System Account Password"/>
+	<field name="NETSUITE_SYSTEM_ACCOUNT" type="text" default="abcxyz111" label="Netsuite System Account Number" description="Netsuite System Account Number"/>
+	<field name="LOG_ERROR_TABLE" type="text" default="netsuite_login_errors" label="Netsuite Login Error Log Table" description="Table to track errors with Netsuite logins"/>	
+	<field name="NETSUITE_SIGNUP_REDIRECT_LOCATION" type="text" default="http://www.yourjoomlasite.com/signup.php" label="Netsuite Registration Form" description="The URL of the registration form, e.g. http://www.yourjoomlasite.com/signup.php"/>   
+	<field name="FORGOT_PASSWORD_REDIRECT_LOCATION" type="text" default="http://www.yourjoomlasite.com/forgotpassword.php" label="Forgot Password Form" description="The URL of the Forgot Password form, e.g. http://www.yourjoomlasite.com/forgotpassword.php"/>   
+    	<field name="LOGIN_FORM_REDIRECT_LOCATION" type="text" default="http://www.yourjoomlasite.com/login.php" label="Login Form" description="The URL of the login form, e.g. http://www.yourjoomlasite.com/login.php"/>   
+    </fieldset>
+</fields>
+    </config>
+</extension>
